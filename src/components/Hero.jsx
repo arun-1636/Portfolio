@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "../assets/logo.gif";
+import { SiSpringboot, SiPostgresql } from "react-icons/si";
 
 import { TypeAnimation } from "react-type-animation";
 import ShinyEffect from "./ShinyEffect";
@@ -29,7 +30,7 @@ const Hero = () => {
           transition={{ duration: 1 }}
         >
           <TypeAnimation
-            sequence={["Frontend Developer", 1000, "Webdesigner", 1000]}
+            sequence={["Software Developer", 1000, "Webdesigner", 1000]}
             speed={40}
             repeat={Infinity}
             className="font-bold text-gray-400 text-xl md:text-5xl italic- mb-4"
@@ -53,7 +54,7 @@ const Hero = () => {
             transition={{ duration: 1, delay: 1 }}
             className="text-gray-300 max-w-[300px] md:max-w-[500px] md:text-2xl text-lg mb-6"
           >
-            I am a passionate Frontend Developer
+            I am a passionate Software Developer
           </motion.p>
 
           <motion.div
@@ -70,7 +71,7 @@ const Hero = () => {
               }}
               className="z-10 cursor-pointer font-bold text-gray-200 md:w-auto p-4 border
                                      border-purple-400 rounded-xl"
-              href="https://drive.google.com/file/d/1J9Sx6MGTAdbo_XOp2O7NF5rIafzObOt8/view?usp=sharing"
+              href="https://drive.google.com/file/d/10FYPIth68VQByBTgJHB3fk8WSqKN4tsn/view?usp=sharing"
             >
               Download Resume
             </motion.a>
@@ -125,7 +126,8 @@ const Hero = () => {
         <DiCss3 className="text-blue-600 mx-2" />
         <DiJavascript1 className="text-yellow-500 mx-2" />
         <DiReact className="text-blue-500 mx-2" />
-        <DiNodejsSmall className="text-green-500 mx-2" />
+        <SiSpringboot className="text-green-600 mx-2" />
+        <SiPostgresql className="text-blue-400 mx-2" />
       </motion.div>
 
       <div className="absolute inset-0 hidden md:block">
